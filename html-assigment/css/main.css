@@ -1,11 +1,20 @@
-html
+<!DOCTYPE html>
+<html>
 <head>
-
 <style>
 .btn-word {
   padding: 4px 10px;
   background: #007BFF;
   color: white;
   border-radius: 6px;
+  text-decoration: none;
 }
 </style>
+</head>
+
+<body>
+
+<p>Click <a href="#" class="btn-word">HERE</a> to continue.</p>
+
+</body>
+</html>
