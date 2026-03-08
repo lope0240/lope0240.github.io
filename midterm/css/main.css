@@ -119,19 +119,35 @@ body{
     line-height: 1.5;
 }
 
+/* footer */
+
 .site-footer{
     background-color: darkgreen;
     color: white;
     text-align: right;
-    padding: 20px;
+    padding: 25px 30px;
     font-size: 14px;
+    border-radius: 12px;
+    margin-top: 30px;
+}
+
+
+.site-footer p {
+    margin-bottom: 8px;
+    font-size: 15px;
+}
+
+.site-footer p:last-child {
+    margin-bottom: 0;
 }
 
 .site-footer a {
-color:aliceblue;
-text-decoration: none;
+    color: #e0f0e0;
+    text-decoration: none;
+    border-bottom: 1px dotted rgba(255,255,255,0.5);
 }
 
-.site-footer a:hover{
-    text-decoration: underline;
+.site-footer a:hover {
+    color: white;
+    border-bottom: 1px solid white;
 }
