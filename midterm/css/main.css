@@ -2,11 +2,11 @@
    GLOBAL PAGE STYLE
 ----------------------------------- */
 body {
-    font-family: Arial, sans-serif;
-    background-color: #d9f1ff;   /* light blue background */
+    font-family: monospace;
+    background-color: #000000;   /* light blue background */
     margin: 0;
     padding: 0;
-    color: #333;
+    color: #d66767;
 }
 
 /* -----------------------------------
