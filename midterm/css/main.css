@@ -1,217 +1,174 @@
-
-.container{
-    width: 900px;
-    margin: 0 auto;
-    background-color: #403d39;
-    padding: 20px;
+/* ------------------------------
+   GLOBAL PAGE STYLE
+--------------------------------*/
+body {
+    font-family: Arial, sans-serif;
+    background-color: #d9f1ff;   /* light blue like the starfish page */
+    margin: 0;
+    padding: 0;
+    color: #333;
 }
 
-nav ul{
-    list-style: none;
+/* ------------------------------
+   HEADER + HERO IMAGE
+--------------------------------*/
+header {
     text-align: center;
-    padding: 10px 0;
+    margin-bottom: 20px;
 }
 
-nav li{
-    display: inline;
-    padding: 0 40px;
-    border-right: 1px soild gray;
-}
-
-nav li:last-child{
-    border-right: none;
-}
-
-nav a{
-    text-decoration: none;
-    color: whitesmoke;
-}
-
-.avif-img{
-    float: left;
-    width: 200px;
-    margin-right: 20px;
-}
-
-header{
-    position: relative;
-    text-align: center;
-}
-
-header img{
+header img {
     width: 100%;
-    height: 200px;
+    height: 350px;
     object-fit: cover;
+    display: block;
 }
 
-header h1{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: cadetblue;
-    font-size: 40px;
+header h1 {
+    font-size: 48px;
+    margin: 20px 0 10px;
+    color: #000;
 }
 
-body{
-    background-color: black;
-    font-family: 'Courier New', Courier, monospace;
+/* ------------------------------
+   NAVIGATION BAR
+--------------------------------*/
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0 30px;
+    text-align: center;
 }
 
-form{
-    border: 1px silver;
-    padding: 20px;
+nav li {
+    display: inline-block;
+    margin: 0 25px;
 }
 
-/* THE TOP OF THE PAGE */
-
-body{
-    font-family: 'Courier New', Courier, monospace;
-    background-color: antiquewhite;
-    margin: 0%;
-    padding: 0%;
+nav a {
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+    font-size: 18px;
 }
 
-.container{
+/* ------------------------------
+   MAIN CONTENT CONTAINER
+--------------------------------*/
+.container {
     width: 900px;
     margin: 0 auto;
-    background-color: bisque;
-    padding: 20px;
+    background-color: #ffffff;
+    padding: 30px 40px;
+    border-radius: 8px;
 }
 
-.data::after{
+/* ------------------------------
+   SECTION: DATA / ABOUT
+--------------------------------*/
+.data img {
+    width: 300px;
+    float: left;
+    margin-right: 20px;
+    margin-bottom: 10px;
+    border-radius: 6px;
+}
+
+.data::after {
     content: "";
     display: block;
     clear: both;
 }
 
-
-.data h2{
-    margin-top: 20px;
-    font-size: 22px;
-}
-
-.data img{
-    width: 300px;
-    float: left;
-    margin-right: 20px;
-    margin-bottom: 10px;
-}
-
-.data p{
-    line-height: 1.6;
-    font-size: 17.5px;
-}
-
-/* can music */
-
-.facts h2{
+.data h2 {
+    font-size: 26px;
     margin-top: 10px;
-    font-size: 32px;
 }
-.facts ul{
-    margin-left: 20px;
+
+.data p {
+    font-size: 17px;
+    line-height: 1.6;
+}
+
+/* ------------------------------
+   SECTION: FACTS
+--------------------------------*/
+.facts h2 {
+    font-size: 26px;
+    margin-top: 30px;
+}
+
+.facts ul {
     padding-left: 20px;
-    font-size: 15px;
+    font-size: 16px;
 }
-.facts li{
+
+.facts li {
     margin-bottom: 8px;
     line-height: 1.5;
 }
 
-/* Radio Group */
-
+/* ------------------------------
+   RADIO GROUP
+--------------------------------*/
 .radio-group {
     margin: 30px 0;
     padding: 20px;
-    background-color: darkkhaki;
-    border-radius: 12px;
+    background-color: #f0f7ff;
+    border-radius: 10px;
 }
 
 .radio-group p {
-    font-weight: 600;
-    color: blue;
-    margin-bottom: 15px;
-    font-size: 16px;
-}
-
-.radio option {
-    display: flex;
-    gap: 30px;
-    flex-wrap: wrap;
+    font-weight: bold;
+    margin-bottom: 10px;
 }
 
 .radio-options label {
-    display: flex;
-    align-items: center;
-    gap: 8px;
+    display: block;
+    margin-bottom: 8px;
     cursor: pointer;
-    font-size: 16px;
-    color: #333;
 }
 
-.radio-options input[type="radio"] {
-    width: 18px;
-    height: 18px;
-    accent-color: #1a4d2e;
-}
-
-/* SEND BUTTON */
+/* ------------------------------
+   SEND BUTTON
+--------------------------------*/
 .send-btn {
-    background-color: #1a4d2e;
+    background-color: #0077b6;
     color: white;
     border: none;
     padding: 14px 40px;
     font-size: 18px;
-    font-weight: 600;
+    font-weight: bold;
     border-radius: 40px;
     cursor: pointer;
     display: block;
     margin: 20px auto 0;
-    transition: background-color 0.3s, transform 0.2s;
-    border: 2px solid transparent;
+    transition: 0.3s;
 }
 
 .send-btn:hover {
-    background-color: #2e7d5e;
+    background-color: #005f8a;
     transform: translateY(-2px);
-    box-shadow: 0 4px 12px rgba(26, 77, 46, 0.3);
 }
 
-
-
-
-
-
-/* footer */
-
-.site-footer{
-    background-color: darkgreen;
-    color: white;
-    text-align: right;
-    padding: 25px 30px;
+/* ------------------------------
+   FOOTER
+--------------------------------*/
+.site-footer {
+    background-color: #c7e7ff;
+    color: #000;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
     font-size: 14px;
-    border-radius: 12px;
-    margin-top: 30px;
-}
-
-
-.site-footer p {
-    margin-bottom: 8px;
-    font-size: 15px;
-}
-
-.site-footer p:last-child {
-    margin-bottom: 0;
+    border-radius: 8px;
 }
 
 .site-footer a {
-    color: #e0f0e0;
+    color: #004a6e;
     text-decoration: none;
-    border-bottom: 1px dotted rgba(255,255,255,0.5);
 }
 
 .site-footer a:hover {
-    color: white;
-    border-bottom: 1px solid white;
+    text-decoration: underline;
 }
