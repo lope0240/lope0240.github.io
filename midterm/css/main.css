@@ -13,8 +13,8 @@ body {
    HEADER + HERO IMAGE
 ----------------------------------- */
 .main {
+    position: relative;
     text-align: center;
-    margin-bottom: 20px;
 }
 
 .main img {
@@ -25,11 +25,14 @@ body {
 }
 
 .main h1 {
-    position: static;        /* removes floating behavior */
-    margin-top: 20px;        /* spacing below the image */
-    font-size: 48px;         /* large headline */
-    color: #000;             /* black text like the example */
-    font-weight: bold;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 60px;
+  font-weight: bold;
+  text-shadow: 2px 2px 6px rgba(0,0,0,0,4);
 }
 
 /* -----------------------------------
