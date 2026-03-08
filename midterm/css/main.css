@@ -25,9 +25,10 @@ header img {
 }
 
 header h1 {
-    font-size: 48px;
-    margin: 20px 0 10px;
-    color: #000;
+    position: static;        /* removes floating behavior */
+    margin-top: 20px;        /* spacing below the image */
+    font-size: 48px;         /* large headline */
+    color: #000;             /* black text like the example */
     font-weight: bold;
 }
 
