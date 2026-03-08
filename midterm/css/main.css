@@ -92,7 +92,7 @@ body{
 }
 
 .data img{
-    width: 250px;
+    width: 300px;
     float: left;
     margin-right: 20px;
     margin-bottom: 10px;
@@ -100,13 +100,14 @@ body{
 
 .data p{
     line-height: 1.6;
-    font-size: 17px;
+    font-size: 17.5px;
 }
 
 /* can music */
 
 .facts h2{
-    margin-top: 30px;
+    margin-top: 10px;
+    font-size: 32px;
 }
 .facts ul{
     margin-left: 20px;
