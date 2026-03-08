@@ -24,7 +24,7 @@ nav li:last-child{
 
 nav a{
     text-decoration: none;
-    color: aqua;
+    color: whitesmoke;
 }
 
 .photo-one.avig-img{
@@ -79,3 +79,17 @@ body{
     padding: 20px;
 }
 
+.DATA h2{
+    margin-top: 20px;
+}
+
+.sena-main.jpeg{
+    width: 200px;
+    float: left;
+    margin-right: 20px;
+    margin-bottom: 10px;
+}
+
+.DATA p{
+    line-height: 1.5;
+}
