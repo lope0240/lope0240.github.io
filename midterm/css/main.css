@@ -105,13 +105,13 @@ body{
 
 /* can music */
 
-.fact h2{
+.facts h2{
     margin-top: 30px;
 }
-.fact ul{
+.facts ul{
     margin-left: 20px;
 }
-.fact li{
+.facts li{
     margin-bottom: 8px;
     line-height: 1.5;
 }
