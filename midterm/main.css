@@ -68,3 +68,35 @@ section.Fact li {
     margin-bottom: 8px;
 }
 
+section.contact form{
+    border: 1px solid #fff;
+    padding: 20px;
+    background-color: darkgray;
+}
+
+section.contact label {
+    display: block;
+    margin-top: 10px;
+}
+
+section.contact input [type="text"]
+section.contact input [type="email"]
+section.contact textarea {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+}
+
+section.contact input[type="radio"] {
+    margin-right: 5px;
+}
+section.contact button {
+    margin-top: 15px;
+    padding: 8px 15px;
+}
+
+footer {
+    text-align: right;
+    padding: 10px 20px;
+    font-size: 14px;
+}∫
