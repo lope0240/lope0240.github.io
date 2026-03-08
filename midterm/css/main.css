@@ -156,7 +156,27 @@ body{
     accent-color: #1a4d2e;
 }
 
+/* SEND BUTTON */
+.send-btn {
+    background-color: #1a4d2e;
+    color: white;
+    border: none;
+    padding: 14px 40px;
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 40px;
+    cursor: pointer;
+    display: block;
+    margin: 20px auto 0;
+    transition: background-color 0.3s, transform 0.2s;
+    border: 2px solid transparent;
+}
 
+.send-btn:hover {
+    background-color: #2e7d5e;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(26, 77, 46, 0.3);
+}
 
 
 
