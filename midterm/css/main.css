@@ -118,3 +118,20 @@ body{
     margin-bottom: 8px;
     line-height: 1.5;
 }
+
+.site-footer{
+    background-color: darkgreen;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: 14px;
+}
+
+.site-footer a {
+color:aliceblue;
+text-decoration: none;
+}
+
+.site-footer a:hover{
+    text-decoration: underline;
+}
