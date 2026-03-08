@@ -49,3 +49,22 @@ main {
     margin: 20px auto;
     padding: 10px;
 }
+
+section.Can img.sena-main.jpeg {
+    float: left;
+    margin-right: 20px;
+    width: 200px;
+    height: auto;
+}
+
+section.Can h2 {
+    clear: both;
+}
+
+section.Fact ul {
+    padding-left: 20px;
+}
+section.Fact li {
+    margin-bottom: 8px;
+}
+
