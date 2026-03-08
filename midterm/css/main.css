@@ -2,7 +2,7 @@
 .container{
     width: 900px;
     margin: 0 auto;
-    background-color: #fd802e;
+    background-color: #403d39;
     padding: 20px;
 }
 
@@ -51,5 +51,31 @@ header h1{
     transform: translate(-50%, -50%);
     color: cadetblue;
     font-size: 40px;
+}
+
+body{
+    background-color: black;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+form{
+    border: 1px silver;
+    padding: 20px;
+}
+
+/* THE TOP OF THE PAGE */
+
+body{
+    font-family: 'Courier New', Courier, monospace;
+    background-color: antiquewhite;
+    margin: 0%;
+    padding: 0%;
+}
+
+.container{
+    width: 900px;
+    margin: 0 auto;
+    background-color: bisque;
+    padding: 20px;
 }
 
