@@ -63,9 +63,9 @@ nav a {
 .container {
     width: 900px;
     margin: 0 auto;
-    background-color: #ffffff;
+    background-color: #ffff;
     padding: 40px 50px;
-    border-radius: 8px;
+    box-sizing: border-box;
 }
 
 /* -----------------------------------
