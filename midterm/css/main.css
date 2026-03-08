@@ -1,17 +1,17 @@
-/* ------------------------------
+/* -----------------------------------
    GLOBAL PAGE STYLE
---------------------------------*/
+----------------------------------- */
 body {
     font-family: Arial, sans-serif;
-    background-color: #d9f1ff;   /* light blue like the starfish page */
+    background-color: #d9f1ff;   /* light blue background */
     margin: 0;
     padding: 0;
     color: #333;
 }
 
-/* ------------------------------
+/* -----------------------------------
    HEADER + HERO IMAGE
---------------------------------*/
+----------------------------------- */
 header {
     text-align: center;
     margin-bottom: 20px;
@@ -28,11 +28,12 @@ header h1 {
     font-size: 48px;
     margin: 20px 0 10px;
     color: #000;
+    font-weight: bold;
 }
 
-/* ------------------------------
+/* -----------------------------------
    NAVIGATION BAR
---------------------------------*/
+----------------------------------- */
 nav ul {
     list-style: none;
     padding: 0;
@@ -52,20 +53,20 @@ nav a {
     font-size: 18px;
 }
 
-/* ------------------------------
+/* -----------------------------------
    MAIN CONTENT CONTAINER
---------------------------------*/
+----------------------------------- */
 .container {
     width: 900px;
     margin: 0 auto;
     background-color: #ffffff;
-    padding: 30px 40px;
+    padding: 40px 50px;
     border-radius: 8px;
 }
 
-/* ------------------------------
-   SECTION: DATA / ABOUT
---------------------------------*/
+/* -----------------------------------
+   SECTION: LIFE OF A STARFISH / DATA
+----------------------------------- */
 .data img {
     width: 300px;
     float: left;
@@ -81,7 +82,7 @@ nav a {
 }
 
 .data h2 {
-    font-size: 26px;
+    font-size: 28px;
     margin-top: 10px;
 }
 
@@ -90,12 +91,12 @@ nav a {
     line-height: 1.6;
 }
 
-/* ------------------------------
+/* -----------------------------------
    SECTION: FACTS
---------------------------------*/
+----------------------------------- */
 .facts h2 {
-    font-size: 26px;
-    margin-top: 30px;
+    font-size: 28px;
+    margin-top: 40px;
 }
 
 .facts ul {
@@ -108,14 +109,39 @@ nav a {
     line-height: 1.5;
 }
 
-/* ------------------------------
+/* -----------------------------------
+   CONTACT FORM
+----------------------------------- */
+.contact h2 {
+    font-size: 28px;
+    margin-top: 40px;
+}
+
+form label {
+    font-weight: bold;
+    display: block;
+    margin-top: 15px;
+}
+
+form input,
+form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 6px;
+    border: 1px solid #aaa;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+textarea {
+    resize: vertical;
+}
+
+/* -----------------------------------
    RADIO GROUP
---------------------------------*/
+----------------------------------- */
 .radio-group {
-    margin: 30px 0;
-    padding: 20px;
-    background-color: #f0f7ff;
-    border-radius: 10px;
+    margin: 25px 0;
 }
 
 .radio-group p {
@@ -129,46 +155,34 @@ nav a {
     cursor: pointer;
 }
 
-/* ------------------------------
+/* -----------------------------------
    SEND BUTTON
---------------------------------*/
+----------------------------------- */
 .send-btn {
     background-color: #0077b6;
     color: white;
     border: none;
-    padding: 14px 40px;
+    padding: 12px 35px;
     font-size: 18px;
     font-weight: bold;
-    border-radius: 40px;
+    border-radius: 30px;
     cursor: pointer;
     display: block;
-    margin: 20px auto 0;
+    margin: 25px auto 0;
     transition: 0.3s;
 }
 
 .send-btn:hover {
     background-color: #005f8a;
-    transform: translateY(-2px);
 }
 
-/* ------------------------------
+/* -----------------------------------
    FOOTER
---------------------------------*/
+----------------------------------- */
 .site-footer {
-    background-color: #c7e7ff;
-    color: #000;
     text-align: center;
     padding: 20px;
     margin-top: 40px;
     font-size: 14px;
-    border-radius: 8px;
-}
-
-.site-footer a {
-    color: #004a6e;
-    text-decoration: none;
-}
-
-.site-footer a:hover {
-    text-decoration: underline;
+    color: #000;
 }
