@@ -61,11 +61,13 @@ nav a {
    MAIN CONTENT CONTAINER
 ----------------------------------- */
 .container {
-    width: 900px;
+    width: 950px;
     margin: 0 auto;
     background-color: #ffff;
     padding: 40px 50px;
+    box-shadow: 0 0 8px rgb(0,0,0,0.05);
     box-sizing: border-box;
+    border-radius: 10px;
 }
 
 /* -----------------------------------
