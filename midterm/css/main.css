@@ -79,12 +79,20 @@ body{
     padding: 20px;
 }
 
+.data::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+
 .data h2{
     margin-top: 20px;
+    font-size: 22px;
 }
 
 .data img{
-    width: 200px;
+    width: 250px;
     float: left;
     margin-right: 20px;
     margin-bottom: 10px;
@@ -92,5 +100,5 @@ body{
 
 .data p{
     line-height: 1.6;
-    text-align: left;
+    font-size: 17px;
 }
