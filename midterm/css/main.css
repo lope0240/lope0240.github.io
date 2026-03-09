@@ -162,16 +162,14 @@ form input[type="radio"]{
     border: none;
     padding: 12px 35px;
     font-size: 18px;
-    font-weight: bold;
     border-radius: 30px;
     cursor: pointer;
+    margin-top: 20px;
     display: block;
-    margin: 25px auto 0;
-    transition: 0.3s;
 }
 
-.send-btn:hover {
-    background-color: #005f8a;
+button :hover {
+    background-color: #bfff00;
 }
 
 /* -----------------------------------
