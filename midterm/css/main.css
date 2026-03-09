@@ -6,14 +6,18 @@
  box-sizing: border-box;   
 }
 
-
-
 body {
     font-family: monospace;
     background-color: #000000;   /* background */
     margin: 0;
 }
 
+.wrapper {
+    width: 800px;
+    background-color: aliceblue;
+    margin: auto;
+    padding-bottom: 20px;
+}
 /* -----------------------------------
    HEADER + HERO IMAGE
 ----------------------------------- */
