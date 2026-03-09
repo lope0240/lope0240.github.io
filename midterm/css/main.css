@@ -142,10 +142,10 @@ form label{
 form input,form textarea {
     width: 100%;
     padding: 12px;
-    border: 1px solid whitesmoke;
+    border: 1px solid rgb(119, 94, 94);
     border-radius: 4px;
     font-size: 16px;
-    background-color: #fafafa;
+    background-color: #454242;
 }
 
 textarea{
