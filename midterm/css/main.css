@@ -123,8 +123,8 @@ label {
     font-weight: 600;
 }
 
-input [type="text"]
-input [type="email"]
+input[type="text"]
+input[type="email"]
 textarea {
     width: 100%;
     padding: 8px;
@@ -133,6 +133,11 @@ textarea {
 
 textarea {
     height: 100px;
+}
+
+.radio-group label{
+    display: inline;
+    margin-right: 15px;
 }
 
 button {
