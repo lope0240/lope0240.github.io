@@ -104,6 +104,14 @@ nav a:hover {
 
 /* ---------------- FORM ---------------- */
 
+
+.contact-box{
+    border: 2px solid #999;
+    padding: 14px;
+    background-color: blue;
+}
+
+
 form {
     display: block;
     margin-top: 10px;
@@ -112,6 +120,7 @@ form {
 label {
     display: block;
     margin-top: 10px;
+    font-weight: 600;
 }
 
 input,
