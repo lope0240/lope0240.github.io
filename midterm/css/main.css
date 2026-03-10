@@ -109,11 +109,11 @@ nav a:hover {
     border: 2px solid #999;
     padding: 14px;
     background-color: blue;
+    margin-top: 20px;
 }
 
 
 form {
-    display: block;
     margin-top: 10px;
 }
 
@@ -123,7 +123,8 @@ label {
     font-weight: 600;
 }
 
-input,
+input [type="text"]
+input [type="email"]
 textarea {
     width: 100%;
     padding: 8px;
