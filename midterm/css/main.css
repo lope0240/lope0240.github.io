@@ -99,6 +99,11 @@ nav a:hover {
     margin-right: 15px;
 }
 
+.data h2{
+    font-size: 22px;
+    margin-top: 20px;
+}
+
 /* Text spacing */
 .data p {
     line-height: 1.6;
