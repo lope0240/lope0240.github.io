@@ -35,11 +35,11 @@ body {
 /* Title on top of the image */
 .site-title {
     position: absolute;
-    top: 50%;
+    top: 35%;
     left: 50%;
     transform: translate(-50%, -50%);
-    color: rgb(238, 106, 19);
-    font-size: 48px;
+    color: rgb(255, 1, 234);
+    font-size: 120px;
 }
 
 /* ---------------- NAVIGATION ---------------- */
