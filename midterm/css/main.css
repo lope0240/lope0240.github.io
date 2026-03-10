@@ -102,12 +102,16 @@ nav a:hover {
 /* Text spacing */
 .data p {
     line-height: 1.6;
+    font-family: monospace;
+    color: rgb(255, 255, 255);
 }
 
 /* ---------------- FACTS SECTION ---------------- */
 
 .facts ul {
     padding-left: 20px;
+    font-family: monospace;
+    color: aliceblue;
 }
 
 /* ---------------- FORM ---------------- */
