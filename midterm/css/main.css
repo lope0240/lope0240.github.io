@@ -99,9 +99,16 @@ nav a:hover {
     margin-right: 15px;
 }
 
+.data h2{
+    font-size: 22px;
+    color: darkcyan;
+    margin-top: 15px;
+}
+
 /* Text spacing */
 .data p {
     line-height: 1.6;
+    font-size: 11.5px;
     font-family: monospace;
     color: rgb(255, 255, 255);
 }
