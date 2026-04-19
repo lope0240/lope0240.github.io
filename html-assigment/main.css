@@ -16,6 +16,7 @@ header {
 }
 
 #my-image {
+    width: 400px;
     box-shadow: 0 0 2px 1px black;
 }
 
