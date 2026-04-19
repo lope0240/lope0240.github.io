@@ -4,7 +4,7 @@
 header,footer {
     background-color: rgb(0, 0, 0);
     font-family: monospace;
-    size: 40px;
+    font-size: 40px;
     color: rgb(194, 215, 215);
 }
 
