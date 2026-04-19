@@ -15,6 +15,10 @@ header {
     font-weight: bold;
 }
 
+#my-image {
+    box-shadow: 0 0 2px 1px black;
+}
+
 .sub-title {
     background-color: rgb(10, 10, 10);
     color: rgb(93, 93, 0);
