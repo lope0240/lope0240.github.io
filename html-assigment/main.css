@@ -1,5 +1,5 @@
 
-/* comment */
+/*  */
 
 header {
     background-color: rgb(0, 0, 0);
@@ -9,10 +9,19 @@ header {
     color: rgb(194, 215, 215);
 }
 
+.site-title {
+    color: darkgreen;
+    font-weight: bold;
+}
 
+.sub-title {
+    color: rgb(255, 255, 24);
+    font-weight: bold;
+}
 
 
 /* Here I adding some new feature like color, font-size and font-family */
+
 body {
     font-family: Arial, Helvetica, sans-serif;
     size: 18px;
