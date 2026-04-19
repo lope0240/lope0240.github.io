@@ -30,6 +30,7 @@ header {
 /* Here I adding some new feature like color, font-size and font-family */
 
 body {
+    background-color: black;
     font-family: Arial, Helvetica, sans-serif;
     size: 18px;
     color: rgb(80, 80, 211);
