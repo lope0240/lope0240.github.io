@@ -138,3 +138,23 @@ nav {
 }
 
 /*THREE*/
+
+#about {
+  background: var(--light-gold);
+  padding: 0.75rem;
+}
+#about h2 {
+  margin: 1rem 0 0.75rem;
+  font-size: 2rem;
+  line-height: 1.1;
+}
+#about p {
+  margin: 0.75rem 0 1rem;
+  font-size: 0.95rem;
+}
+/* ===== Global section spacing ===== */
+section {
+  margin-bottom: 1rem;
+}
+
+/*End of the first block*/
