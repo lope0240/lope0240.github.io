@@ -106,32 +106,26 @@ nav {
   background: rgba(0, 0, 0, 0.45);
 }
 
-#home h1 {
-  position: absolute;
-  left: 1rem;
-  right: 1rem;
-  top: 3.2rem;
-  margin: 0;
-  color: #fff;
-  font-size: 3rem;
-  line-height: 1.08;
-  z-index: 2;
-}
-
 #home .hero-box {
   position: absolute;
   left: 1rem;
   right: 1rem;
-  top: 13.5rem;
+  top: 3rem;              /* move whole box down */
   z-index: 2;
   background: rgba(0, 0, 0, 0.55);
   color: #fff;
   padding: 1rem;
 }
 
+#home .hero-box h1 {
+  margin: 0 0 0.8rem;
+  font-size: 3rem;
+  line-height: 1.08;
+  color: #fff;
+}
+
 #home .hero-box p {
   margin: 0 0 1rem;
-  font-size: 0.95rem;
 }
 
 #home .hero-box a {
@@ -140,11 +134,6 @@ nav {
   color: #111;
   padding: 0.8rem 1rem;
   font-weight: 700;
-}
-
-#home .hero-box a::after {
-  content: " \25B6";
-  margin-left: 0.45rem;
 }
 
 /*THREE*/
