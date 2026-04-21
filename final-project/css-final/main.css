@@ -158,3 +158,58 @@ section {
 }
 
 /*End of the first block*/
+
+#services {
+  background: #f3f3f3;
+  padding: 0.75rem;
+}
+#services h2 {
+  margin: 0 0 0.75rem;
+  font-size: 2rem;
+  line-height: 1.1;
+}
+/* Each service card = image + title + text + button */
+#services img {
+  width: 100%;
+  display: block;
+  margin: 0;
+}
+#services h3,
+#services p {
+  background: var(--light-gold);
+  margin: 0;
+  padding-left: 0.6rem;
+  padding-right: 0.6rem;
+}
+/* title block */
+#services h3 {
+  padding-top: 0.9rem;
+  font-size: 2rem;
+  line-height: 1.1;
+}
+/* text block */
+#services p {
+  padding-top: 0.6rem;
+  padding-bottom: 1rem;
+  font-size: 0.92rem;
+}
+/* service button style */
+.service-btn {
+  display: inline-block;
+  background: var(--dark);
+  color: #fff;
+  padding: 0.9rem 1.2rem;
+  margin: 0 0 1rem 0.6rem;
+  font-size: 1.4rem;
+  border: 1px solid var(--dark);
+}
+.service-btn::after {
+  content: " \25B6"; /* triangle arrow */
+  margin-left: 0.5rem;
+}
+/* Wrap button area in same beige background */
+.service-btn-wrap {
+  background: var(--light-gold);
+  margin: 0;
+  padding-bottom: 0.6rem;
+}
