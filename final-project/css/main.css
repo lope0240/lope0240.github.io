@@ -1,15 +1,14 @@
-/* ============================================
-   CSS RESET
-   ============================================ */
-
-*,
-*::before,
-*::after {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
-
+ 
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #ffffff;
+    color: #1a1a1a;
+}
 /* ============================================
    ROOT VARIABLES â€” Three Star Media
    ============================================ */
