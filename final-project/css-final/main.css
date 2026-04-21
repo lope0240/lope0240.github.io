@@ -338,3 +338,117 @@ section {
   padding-bottom: 1rem;
   font-size: 0.92rem;
 }
+
+/*last sections*/
+
+/* ===== CONTACT / HOURS / LOCATION (mobile) ===== */
+#contact {
+  background: #f3f3f3;
+  padding: 0.75rem;
+}
+
+#contact h2 {
+  margin: 0.5rem 0 0.8rem;
+  font-size: 3rem;
+  line-height: 1.05;
+}
+
+#contact h3 {
+  margin: 0 0 0.5rem;
+  font-size: 2rem;
+  line-height: 1.1;
+}
+
+.contact-box label {
+  display: block;
+  margin: 0.45rem 0 0.2rem;
+  font-size: 0.9rem;
+  color: #111;
+}
+
+.contact-box input,
+.contact-box textarea {
+  width: 100%;
+  border: 1px solid #9a9a9a;
+  background: #fff;
+  padding: 0.5rem;
+  font-size: 1rem;
+}
+
+.contact-box textarea {
+  min-height: 140px;
+  resize: vertical;
+}
+
+.button-contact {
+  margin-top: 0.6rem;
+}
+
+.button-contact button {
+  background: #222;
+  color: var(--gold);
+  border: none;
+  padding: 0.35rem 0.55rem;
+  font-size: 1.6rem;
+  line-height: 1;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+/* Hours table */
+table {
+  width: calc(100% - 1.5rem);
+  margin: 0.8rem 0.75rem 1rem;
+  border-collapse: collapse;
+  background: #f3f3f3;
+}
+
+caption {
+  text-align: left;
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 0.45rem;
+}
+
+th,
+td {
+  border: 1px solid #666;
+  padding: 0.55rem 0.45rem;
+  text-align: left;
+  font-size: 0.92rem;
+}
+
+th {
+  background: var(--light-gold);
+  text-align: center;
+}
+
+/* Location */
+.location-pin {
+  background: #f3f3f3;
+  padding: 0 0.75rem 1rem;
+}
+
+.location-pin h2 {
+  margin: 0 0 0.5rem;
+  font-size: 2rem;
+}
+
+.location-pin iframe {
+  width: 100%;
+  height: 300px;
+  border: 0;
+  display: block;
+}
+
+/* Footer */
+.site-footer {
+  background: #222;
+  color: var(--gold);
+  padding: 1rem 0.75rem;
+  font-size: 0.9rem;
+}
+
+.site-footer p {
+  margin: 0.25rem 0;
+}
