@@ -6,3 +6,23 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+/**/
+
+:root {
+ 
+  /* --- Colors --- */
+  --color-primary:        #f5c518;
+  --color-primary-dark:   #d4a900;
+ 
+  --color-dark:           #1a1a1a;
+  --color-dark-mid:       #2c2c2c;
+ 
+  --color-light-bg:       #f5f0e8;
+  --color-white:          #ffffff;
+ 
+  --color-text-primary:   #1a1a1a;
+  --color-text-light:     #ffffff;
+  --color-text-muted:     #666666;
+
+}
