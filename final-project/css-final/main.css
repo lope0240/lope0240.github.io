@@ -242,3 +242,99 @@ section {
   content: " \25B6";
   margin-left: 0.5rem;
 }
+
+/* Section Vision*/
+
+/* ===== VISION ===== */
+#vision {
+  position: relative;
+  margin: 0.75rem;
+}
+
+#vision img {
+  width: 100%;
+  min-height: 220px;
+  object-fit: cover;
+  display: block;
+}
+
+#vision .vision-content {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.45);
+  color: #fff;
+  padding: 0.9rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#vision h2 {
+  margin: 0 0 0.5rem;
+  font-size: 2rem;
+  line-height: 1.1;
+}
+
+#vision p {
+  margin: 0 0 0.8rem;
+  font-size: 0.9rem;
+}
+
+#vision .vision-btn {
+  display: inline-block;
+  width: fit-content;
+  background: #222;
+  color: #fff;
+  border: 1px solid var(--gold);
+  padding: 0.8rem 1rem;
+}
+
+#vision .vision-btn::after {
+  content: " \25B6";
+  margin-left: 0.5rem;
+}
+
+/* ===== TEAM ===== */
+#team {
+  background: #f3f3f3;
+  padding: 0.75rem;
+}
+
+#team h2 {
+  margin: 0.5rem 0 0.9rem;
+  font-size: 3rem;
+  line-height: 1.05;
+}
+
+#team img {
+  width: 100%;
+  display: block;
+}
+
+#team h3,
+#team h4,
+#team p {
+  background: var(--light-gold);
+  margin: 0;
+  padding-left: 0.6rem;
+  padding-right: 0.6rem;
+}
+
+#team h3 {
+  padding-top: 0.6rem;
+  font-size: 2rem;
+  line-height: 1.1;
+}
+
+#team h4 {
+  padding-top: 0.2rem;
+  padding-bottom: 0.4rem;
+  font-size: 1rem;
+  border-bottom: 2px solid var(--gold);
+}
+
+#team p {
+  padding-top: 0.7rem;
+  padding-bottom: 1rem;
+  font-size: 0.92rem;
+}
