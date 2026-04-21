@@ -1,71 +1,63 @@
-*, *::before, *::after {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+/* 1. RESET */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
- 
-body {
-    font-family: 'Arial', sans-serif;
-    background-color: #ffffff;
-    color: #1a1a1a;
-}
-/* ============================================
-   ROOT VARIABLES â€” Three Star Media
-   ============================================ */
 
+/* 2. ROOT VARIABLES */
 :root {
-  --color-primary:      #f5c518;
+  --color-primary: #f5c518;
   --color-primary-dark: #d4a900;
-  --color-dark:         #1c1c1c;
-  --color-dark-mid:     #2a2a2a;
-  --color-light-bg:     #f5f0e1;
-  --color-white:        #ffffff;
-  --color-text-body:    #333333;
-  --color-text-muted:   #666666;
-  --color-text-light:   #ffffff;
-  --color-border:       #dddddd;
+  --color-dark: #1c1c1c;
+  --color-dark-mid: #2a2a2a;
+  --color-light-bg: #f5f0e1;
+  --color-white: #ffffff;
+  --color-text-body: #333333;
+  --color-text-muted: #666666;
+  --color-text-light: #ffffff;
+  --color-border: #dddddd;
 
-  --font-heading: 'Oswald', sans-serif;
-  --font-body:    'Open Sans', sans-serif;
+  --font-heading: "Oswald", sans-serif;
+  --font-body: "Open Sans", sans-serif;
 
-  --fw-regular:  400;
+  --fw-regular: 400;
   --fw-semibold: 600;
-  --fw-bold:     700;
+  --fw-bold: 700;
 
-  --fs-sm:   0.8rem;
+  --fs-sm: 0.8rem;
   --fs-base: 1rem;
-  --fs-md:   1.125rem;
-  --fs-lg:   1.4rem;
-  --fs-xl:   1.9rem;
+  --fs-md: 1.125rem;
+  --fs-lg: 1.4rem;
+  --fs-xl: 1.9rem;
   --fs-hero: 2.2rem;
 
-  --lh-tight:   1.2;
-  --lh-normal:  1.55;
+  --lh-tight: 1.2;
+  --lh-normal: 1.55;
   --lh-relaxed: 1.75;
 
-  --space-1:  0.25rem;
-  --space-2:  0.5rem;
-  --space-3:  0.75rem;
-  --space-4:  1rem;
-  --space-5:  1.25rem;
-  --space-6:  1.5rem;
-  --space-8:  2rem;
+  --space-1: 0.25rem;
+  --space-2: 0.5rem;
+  --space-3: 0.75rem;
+  --space-4: 1rem;
+  --space-5: 1.25rem;
+  --space-6: 1.5rem;
+  --space-8: 2rem;
   --space-10: 2.5rem;
   --space-12: 3rem;
 
   --radius-sm: 3px;
   --radius-md: 6px;
 
-  --shadow-sm: 0 1px 4px rgba(0,0,0,0.10);
-  --shadow-md: 0 4px 14px rgba(0,0,0,0.15);
+  --shadow-sm: 0 1px 4px rgba(0, 0, 0, 0.1);
+  --shadow-md: 0 4px 14px rgba(0, 0, 0, 0.15);
 
   --transition: 200ms ease;
 }
 
-/* ============================================
-   BASE
-   ============================================ */
-
+/* 3. BASE */
 html {
   scroll-behavior: smooth;
 }
@@ -93,103 +85,75 @@ ul {
   list-style: none;
 }
 
-/* ============================================
-   NAV
-   ============================================ */
-
-nav {
-  background-color: var(--color-dark);       /* Dark background from mockup */
-  padding: var(--space-3) var(--space-8);    /* Breathing room top/bottom and sides */
-  display: flex;                             /* Puts logo, links, search in one row */
-  align-items: center;                       /* Vertically centers all three */
-  justify-content: space-between;            /* Logo left — links center — search right */
-  gap: var(--space-6);                       /* Space between the three groups */
+/* 4. NAV (MOBILE FIRST) */
+.site-nav {
+  background-color: #222;
+  padding: 0 10px 12px;
 }
- 
-/* --- Logo --- */
-nav > a img {
-  width: 56px;
+
+.nav-logo {
+  display: block;
+  background-color: #c78c06;
+  text-align: center;
+  padding: 16px 0;
+  margin: 0 -10px 10px;
+}
+
+.nav-logo img {
+  width: 70%;
+  max-width: 190px;
   height: auto;
+  margin: 0 auto;
 }
- 
-/* --- Nav links — horizontal row --- */
-nav ul {
-  display: flex;                /* Links sit side by side */
-  align-items: center;
-  gap: var(--space-6);         /* Space between each link */
+
+.nav-menu {
+  margin: 0;
+  padding: 0;
 }
- 
-nav ul li a {
-  font-family: var(--font-heading);
-  font-size: var(--fs-sm);
-  font-weight: var(--fw-semibold);
-  color: var(--color-text-light);
-  letter-spacing: 0.08em;
+
+.nav-menu li {
+  text-align: center;
+}
+
+.nav-menu a {
+  display: block;
+  color: #c78c06;
   text-transform: uppercase;
-  padding-bottom: var(--space-1);
-  border-bottom: 2px solid transparent;     /* Invisible underline — ready for hover */
-  transition: color var(--transition),
-              border-color var(--transition);
+  font-weight: 700;
+  font-size: 0.9rem;
+  padding: 10px 0;
 }
- 
-nav ul li a:hover {
-  color: var(--color-primary);              /* Gold on hover */
-  border-bottom-color: var(--color-primary);/* Gold underline slides in */
+
+.nav-menu a:hover,
+.nav-menu a:focus {
+  background-color: #c78c06;
+  color: #111;
 }
- 
-/* --- Search bar --- */
-.search-bar {
+
+.nav-search {
   display: flex;
-  align-items: center;
-  gap: var(--space-2);
+  margin-top: 10px;
 }
- 
-.search-bar input {
-  padding: var(--space-2) var(--space-3);
-  width: 160px;
-  background-color: var(--color-dark-mid);
-  border: 1px solid #444;
-  border-radius: var(--radius-sm);
-  color: var(--color-text-light);
-  font-family: var(--font-body);
-  font-size: var(--fs-sm);
-  outline: none;
-  transition: border-color var(--transition),
-              width var(--transition);      /* Expands on focus */
+
+.nav-search input {
+  flex: 1;
+  min-width: 0;
+  padding: 8px;
+  border: 1px solid #c78c06;
+  font-size: 0.9rem;
 }
- 
-.search-bar input::placeholder {
-  color: #888;
-}
- 
-.search-bar input:focus {
-  border-color: var(--color-primary);
-  width: 200px;                             /* Widens slightly when typing */
-}
- 
-.search-bar button {
-  padding: var(--space-2) var(--space-4);
-  background-color: var(--color-primary);
-  color: var(--color-dark);
-  font-family: var(--font-heading);
-  font-size: var(--fs-sm);
-  font-weight: var(--fw-bold);
-  letter-spacing: 0.04em;
-  border: none;
-  border-radius: var(--radius-sm);
+
+.nav-search button {
+  border: 1px solid #c78c06;
+  background: #c78c06;
+  color: #111;
+  padding: 8px 12px;
+  font-weight: 700;
   cursor: pointer;
-  transition: background-color var(--transition);
-}
- 
-.search-bar button:hover {
-  background-color: var(--color-primary-dark);
 }
 
-/* ============================================
-   HERO â€” #home
-   ============================================ */
-
-#home {
+/* 5. HERO */
+.hero {
   position: relative;
   min-height: 320px;
   display: flex;
@@ -200,7 +164,7 @@ nav ul li a:hover {
   overflow: hidden;
 }
 
-#home img {
+.hero img {
   position: absolute;
   inset: 0;
   width: 100%;
@@ -209,7 +173,7 @@ nav ul li a:hover {
   opacity: 0.4;
 }
 
-#home h1 {
+.hero h1 {
   position: relative;
   z-index: 1;
   font-family: var(--font-heading);
@@ -221,10 +185,8 @@ nav ul li a:hover {
   margin-bottom: var(--space-4);
 }
 
-/* "Connect with us" button */
-.bth {
-  position: relative;
-  z-index: 1;
+/* 6. BUTTONS */
+.btn {
   display: inline-block;
   padding: var(--space-2) var(--space-6);
   background-color: var(--color-primary);
@@ -237,25 +199,20 @@ nav ul li a:hover {
   transition: background-color var(--transition);
 }
 
-.bth:hover {
+.btn:hover {
   background-color: var(--color-primary-dark);
 }
 
-/* ============================================
-   ABOUT â€” #about
-   ============================================ */
-
+/* 7. ABOUT */
 #about {
   padding: var(--space-8) var(--space-4);
-  background-color: var(--color-white);
 }
 
 #about h2 {
   font-family: var(--font-heading);
   font-size: var(--fs-xl);
-  font-weight: var(--fw-bold);
-  text-transform: uppercase;
   margin-bottom: var(--space-4);
+  text-transform: uppercase;
 }
 
 #about img {
@@ -270,80 +227,47 @@ nav ul li a:hover {
   margin-bottom: var(--space-5);
 }
 
-/* ============================================
-   SERVICES â€” #services
-   ============================================ */
-
+/* 8. SERVICES */
 #services {
   padding: var(--space-8) var(--space-4);
-  background-color: var(--color-white);
 }
 
 #services > h2 {
   font-family: var(--font-heading);
   font-size: var(--fs-xl);
-  font-weight: var(--fw-bold);
-  text-transform: uppercase;
   margin-bottom: var(--space-4);
+  text-transform: uppercase;
 }
 
 #services img {
-  width: 100%;
   margin-bottom: var(--space-4);
 }
 
 #services h3 {
   font-family: var(--font-heading);
   font-size: var(--fs-lg);
-  font-weight: var(--fw-bold);
-  text-transform: uppercase;
   margin-bottom: var(--space-2);
+  text-transform: uppercase;
 }
 
 #services p {
   font-size: var(--fs-sm);
   line-height: var(--lh-relaxed);
   color: var(--color-text-muted);
-  margin-bottom: var(--space-3);
+  margin-bottom: var(--space-6);
 }
 
-#services a {
-  display: inline-block;
-  padding: var(--space-2) var(--space-5);
-  background-color: var(--color-primary);
-  color: var(--color-dark);
-  font-family: var(--font-heading);
-  font-size: var(--fs-sm);
-  font-weight: var(--fw-bold);
-  border-radius: var(--radius-sm);
-  margin-bottom: var(--space-8);
-  transition: background-color var(--transition);
-}
-
-#services a:hover {
-  background-color: var(--color-primary-dark);
-}
-
-/* ============================================
-   VISION â€” orphan elements outside <section>
-   ============================================ */
-
-body > h2 {
+/* 9. VISION */
+#vision h2 {
   font-family: var(--font-heading);
   font-size: var(--fs-xl);
-  font-weight: var(--fw-bold);
   text-transform: uppercase;
   background-color: var(--color-dark);
   color: var(--color-text-light);
   padding: var(--space-6) var(--space-4) var(--space-3);
 }
 
-body > img {
-  width: 100%;
-  display: block;
-}
-
-body > p {
+#vision p {
   background-color: var(--color-light-bg);
   padding: var(--space-6) var(--space-4);
   font-size: var(--fs-sm);
@@ -351,27 +275,21 @@ body > p {
   color: var(--color-text-muted);
 }
 
-/* ============================================
-   TEAM â€” #team
-   ============================================ */
-
+/* 10. TEAM */
 #team {
   padding: var(--space-8) var(--space-4);
-  background-color: var(--color-white);
 }
 
 #team > h2 {
   font-family: var(--font-heading);
   font-size: var(--fs-xl);
-  font-weight: var(--fw-bold);
-  text-transform: uppercase;
   margin-bottom: var(--space-6);
+  text-transform: uppercase;
 }
 
 #team h3 {
   font-family: var(--font-heading);
   font-size: var(--fs-lg);
-  font-weight: var(--fw-bold);
   margin-top: var(--space-6);
   margin-bottom: var(--space-1);
 }
@@ -386,7 +304,6 @@ body > p {
 }
 
 #team img {
-  width: 100%;
   max-height: 280px;
   object-fit: cover;
   object-position: top;
@@ -400,10 +317,7 @@ body > p {
   color: var(--color-text-muted);
 }
 
-/* ============================================
-   CONTACT â€” #contact
-   ============================================ */
-
+/* 11. CONTACT */
 #contact {
   background-color: var(--color-dark);
   padding: var(--space-8) var(--space-4);
@@ -412,16 +326,14 @@ body > p {
 #contact h2 {
   font-family: var(--font-heading);
   font-size: var(--fs-xl);
-  font-weight: var(--fw-bold);
-  text-transform: uppercase;
   color: var(--color-text-light);
   margin-bottom: var(--space-1);
+  text-transform: uppercase;
 }
 
 #contact h3 {
   font-family: var(--font-heading);
   font-size: var(--fs-md);
-  font-weight: var(--fw-regular);
   color: #aaaaaa;
   margin-bottom: var(--space-5);
 }
@@ -436,7 +348,6 @@ body > p {
   font-size: var(--fs-sm);
   font-weight: var(--fw-semibold);
   color: var(--color-text-light);
-  letter-spacing: 0.04em;
 }
 
 .contact-box input,
@@ -450,12 +361,6 @@ body > p {
   font-family: var(--font-body);
   font-size: var(--fs-sm);
   outline: none;
-  transition: border-color var(--transition);
-}
-
-.contact-box input:focus,
-.contact-box textarea:focus {
-  border-color: var(--color-primary);
 }
 
 .contact-box textarea {
@@ -463,11 +368,8 @@ body > p {
   resize: vertical;
 }
 
-.button-contact {
+.contact-box button {
   margin-top: var(--space-2);
-}
-
-.button-contact button {
   padding: var(--space-3) var(--space-8);
   background-color: var(--color-primary);
   color: var(--color-dark);
@@ -477,59 +379,39 @@ body > p {
   border: none;
   border-radius: var(--radius-sm);
   cursor: pointer;
-  transition: background-color var(--transition);
 }
 
-.button-contact button:hover {
-  background-color: var(--color-primary-dark);
-}
-
-/* ============================================
-   HOURS TABLE
-   ============================================ */
-
+/* 12. TABLE */
 table {
   width: 100%;
   border-collapse: collapse;
-  font-family: var(--font-body);
   font-size: var(--fs-sm);
 }
 
 table caption {
   font-family: var(--font-heading);
   font-size: var(--fs-lg);
-  font-weight: var(--fw-bold);
-  text-transform: uppercase;
   text-align: left;
   padding: var(--space-6) var(--space-4) var(--space-3);
-  color: var(--color-text-body);
 }
 
 table th {
   background-color: var(--color-primary);
   color: var(--color-dark);
-  font-family: var(--font-heading);
-  font-weight: var(--fw-bold);
   text-align: left;
   padding: var(--space-3) var(--space-4);
-  font-size: var(--fs-sm);
-  letter-spacing: 0.04em;
 }
 
 table td {
   padding: var(--space-3) var(--space-4);
   border-bottom: 1px solid var(--color-border);
-  color: var(--color-text-muted);
 }
 
 table tbody tr:nth-child(even) {
   background-color: var(--color-light-bg);
 }
 
-/* ============================================
-   LOCATION
-   ============================================ */
-
+/* 13. LOCATION */
 .location-pin {
   padding: var(--space-6) var(--space-4) var(--space-8);
 }
@@ -537,9 +419,8 @@ table tbody tr:nth-child(even) {
 .location-pin h2 {
   font-family: var(--font-heading);
   font-size: var(--fs-xl);
-  font-weight: var(--fw-bold);
-  text-transform: uppercase;
   margin-bottom: var(--space-4);
+  text-transform: uppercase;
 }
 
 .location-pin iframe {
@@ -548,18 +429,14 @@ table tbody tr:nth-child(even) {
   box-shadow: var(--shadow-md);
 }
 
-/* ============================================
-   FOOTER
-   ============================================ */
-
+/* 14. FOOTER */
 .site-footer {
   background-color: var(--color-dark);
-  color: #888888;
+  color: #888;
   text-align: center;
   padding: var(--space-6) var(--space-4);
   font-size: var(--fs-sm);
   display: flex;
   flex-direction: column;
   gap: var(--space-2);
-  line-height: var(--lh-normal);
 }
