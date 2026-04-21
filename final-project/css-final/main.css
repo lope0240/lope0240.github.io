@@ -40,35 +40,18 @@ nav {
   background: var(--dark);
 }
 
-.nav-left {
-  background: var(--gold);
-  padding: 0.75rem;
-}
-
-.nav-left > a img {
-  width: 90px;
-  margin-bottom: 0.75rem;
-}
-
-.nav-left ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  background: var(--dark);
-  text-align: center;
-}
-
-.nav-left li a {
+.nav ul li a{
   display: block;
-  padding: 0.85rem 0.5rem;
-  background: var(--dark);
-  color: var(--gold);
-  font-size: 1rem;
+  color: #c78c06;
+  padding: 1rem 0;
+  text-decoration: none;
+  text-align: center;
+  width: 100%;
 }
 
-.nav-left li:first-child a {
-  background: var(--gold);
-  color: #111;
+.nav ul li a:hover{
+  background-color: #c78c06;
+  color: #222;
 }
 
 .search-bar {
