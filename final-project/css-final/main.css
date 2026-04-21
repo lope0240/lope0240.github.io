@@ -132,7 +132,7 @@ nav {
 #home .hero-box a {
   display: inline-block;
   background: var(--gold);
-  color: #ffffff;
+  color: #840000;
   font-weight: 700;
   padding: 0.8rem 1rem;
 }
@@ -160,7 +160,7 @@ section {
 /*End of the first block*/
 
 #services {
-  background: #f3f3f3;
+  background: #006eff;
   padding: 0.75rem;
 }
 #services h2 {
@@ -197,7 +197,7 @@ section {
 .service-btn {
   display: inline-block;
   background: var(--dark);
-  color: #fff;
+  color: #ff0000;
   padding: 0.9rem 1.2rem;
   margin: 0 0 1rem 0.6rem;
   font-size: 1.4rem;
