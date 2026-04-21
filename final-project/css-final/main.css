@@ -171,6 +171,7 @@ nav {
 /*THREE*/
 
 #about {
+  margin-top: 2rem;
   background: var(--light-gold);
   padding: 0.75rem;
 }
