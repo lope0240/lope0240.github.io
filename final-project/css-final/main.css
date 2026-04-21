@@ -141,9 +141,10 @@ nav {
   text-align: left;
 }
 
-#home .hero-box h1 {
+#home .hero-box h1::first-letter {
   margin: 0 0 0.75rem;
-  font-size: clamp(2rem, 7vw, 2.75rem);
+  font-size: 1.8em;
+  font-weight: 700;
   line-height: 1.1;
   color: #fff;
 }
@@ -156,10 +157,12 @@ nav {
 
 .connectbtn {
   display: inline-block;
-  background: var(--gold);
-  color: #111;
+  background: var(--dark);
+  color: var(--gold);
+  border: 1px soild var(--gold);
   font-weight: 700;
-  padding: 0.85rem 1rem;
+  padding: 1rem 1.2rem;
+  letter-spacing: 0.5px;
 }
 
 .connectbtn::after {
