@@ -27,6 +27,7 @@ a {
 /*one*/
 
 nav {
+  background-color: #222;
   background: var(--dark);
   padding: 0.75rem;
 }
