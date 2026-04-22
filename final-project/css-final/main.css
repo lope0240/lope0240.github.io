@@ -172,10 +172,10 @@ nav {
   margin-left: 0.35rem;
   font-size: 0.85em;
 }
-/*THREE*/
+/* styling about us */
 
 #about {
-  margin-top: 2rem;
+  margin-top: 0;
   background: var(--light-gold);
   padding: 1.5rem 0.75rem;
 }
@@ -187,37 +187,33 @@ nav {
 }
 
 #about h2 {
-  font-size: 5rem;
+  font-size: 3rem;
+  font-weight: bold;
+  line-height: 1.1;
   margin: 0 0 1rem 0;
   margin-bottom: 1rem;
   text-align: left;
 }
 
 #about img{
+  order: 2;
   width: 100%;
   display: block;
   margin: 0 0 1rem 0;
 }
 
 #about p {
-  background: #fff;
-  border-left: 4px soild var(--gold);
+  width: 100%;
   padding: 1rem;
-  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
-  border-radius: 4px;
   font-size: 0.95rem;
-  line-height: 1.6;
-  margin: 0  0 1rem 0;
   text-align: left;
   color: #222;
 }
 
 .about-container{
-  background: #e75538;
-  border-color: 4px solid var(--gold);
+  max-width: 1200px;
+  margin: 0 auto;
   padding: 1rem;
-  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
-  border-radius: 0;
 }
 
 
@@ -230,7 +226,7 @@ section {
 /*End of the first block*/
 
 #services {
-  background: #006eff;
+  background: #ffffff;
   padding: 0.75rem;
 }
 #services h2 {
