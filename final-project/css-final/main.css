@@ -8,11 +8,12 @@
   --gold: #c78c06;
   --dark: #222;
   --light-gold: #ffe6ac;
+  --container: 1200px;
 }
 
 body {
   margin: 0;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Open Sans", Arial, Helvetica, sans-serif;
   line-height: 1.5;
   color: #111;
   background: #f3f3f3;
@@ -29,19 +30,52 @@ a {
   color: inherit;
 }
 
+section {
+  margin-bottom: 1rem;
+}
+
+/* ---------- Bleeding backgrounds + centered content ---------- */
+nav,
+#about,
+#services,
+#team,
+#contact,
+.location-pin,
+.site-footer {
+  width: 100%;
+}
+
+.nav-left,
+.search-bar,
+.about-container,
+#services > h2,
+#services > .service-card,
+#team > h2,
+#team > .team-card,
+#contact > h2,
+#contact > h3,
+#contact > .contact-box,
+table,
+.location-pin > h2,
+.location-pin > .map-box,
+.site-footer {
+  max-width: var(--container);
+  margin-left: auto;
+  margin-right: auto;
+}
+
 /* ---------- NAV ---------- */
 nav {
   background: var(--dark);
-  padding: 0.5rem;
+  padding: 0.5rem 0.75rem;
 }
 
-/* Gold band: logo sits on gold; menu list sits on dark under it */
 .nav-left {
   background: var(--gold);
   padding: 0;
-} 
+}
 
-.nav-left>a {
+.nav-left > a {
   display: block;
   background: var(--gold);
   padding: 0.75rem;
@@ -50,7 +84,6 @@ nav {
 .nav-left > a img {
   width: 90px;
   max-width: 100%;
-  display: block;
 }
 
 .nav-left ul {
@@ -59,8 +92,6 @@ nav {
   padding: 0;
   background: var(--dark);
   text-align: center;
-  border: none;
-  outline: none;
 }
 
 .nav-left li a {
@@ -71,28 +102,21 @@ nav {
   background: var(--dark);
 }
 
-/* HOME row: full-width gold + dark text */
-
 .nav-left li:first-child a {
-  background: var(--gold);
-  color:#111;
-}
-
-.nav-left li a:hover {
   background: var(--gold);
   color: #111;
 }
 
+.nav-left li a:hover,
 .nav-left li:first-child a:hover {
   background: var(--gold);
   color: #111;
 }
 
-/* Search */
 .search-bar {
-  margin-top: 0;
-  display: flex;
+  display: flex; /* Flexbox */
   width: 100%;
+  margin-top: 0;
 }
 
 .search-bar input {
@@ -125,10 +149,8 @@ nav {
   width: 100%;
   min-height: 420px;
   object-fit: cover;
-  display: block;
 }
 
-/* Dark overlay on photo only (under text box) */
 #home::before {
   content: "";
   position: absolute;
@@ -138,13 +160,13 @@ nav {
   pointer-events: none;
 }
 
-/* Content panel: left-aligned white text + gold button */
 #home .hero-box {
   position: absolute;
-  left: 0;
-  right: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: calc(100% - 1.5rem);
+  max-width: var(--container);
   top: 10rem;
-  bottom: auto;
   z-index: 2;
   background: rgba(0, 0, 0, 0.65);
   color: #fff;
@@ -152,39 +174,35 @@ nav {
   text-align: left;
 }
 
-#home .hero-box h1{
+#home .hero-box h1 {
   margin: 0 0 0.75rem;
-  font-size: 3.5em;
-  font-weight: 700;
+  font-size: 2.2rem;
+  font-weight: 800;
   line-height: 1.1;
-  color: #fff;
 }
 
 #home .hero-box p {
   margin: 0 0 1rem;
-  font-size: 1.2rem;
-  color: #fff;
+  font-size: 1rem;
 }
 
 .connectbtn {
   display: inline-block;
   background: var(--gold);
   color: #111;
-  border: none;
   font-weight: 700;
-  padding: 2rem 2rem;
+  padding: 1rem 1.25rem;
   letter-spacing: 0.5px;
-  font-size: 1.5rem;
+  font-size: 1rem;
 }
 
 .connectbtn::after {
   content: " \25B6";
-  color: #111;
   margin-left: 0.35rem;
   font-size: 0.85em;
 }
-/* styling about us */
 
+/* ---------- ABOUT ---------- */
 #about {
   margin-top: 0;
   background: var(--light-gold);
@@ -192,59 +210,33 @@ nav {
 }
 
 .about-container {
-  max-width: 1200px;
-  margin: 0 auto;
   padding: 1rem;
 }
 
 #about h2 {
-  font-size: 3rem;
-  font-weight: bold;
+  font-size: 2rem;
+  font-weight: 700;
   line-height: 1.1;
-  margin: 0 0 1rem 0;
-  margin-bottom: 1rem;
+  margin: 0 0 1rem;
   text-align: left;
 }
 
-#about img{
-  order: 2;
+#about img {
   width: 100%;
-  display: block;
-  margin: 0 0 1rem 0;
+  margin: 0 0 1rem;
 }
 
 #about p {
-  width: 100%;
-  padding: 1rem;
+  margin: 0;
   font-size: 0.95rem;
   text-align: left;
   color: #222;
 }
 
-.about-container{
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 1rem;
-}
-
-
-
-/* ===== Global section spacing ===== */
-section {
-  margin-bottom: 1rem;
-}
-
-/*End of the first block*/
-
+/* ---------- SERVICES ---------- */
 #services {
-  background: #ffffff;
+  background: #fff;
   padding: 0.75rem;
-}
-
-.service-card{
-  background: var(--light-gold);
-  margin-bottom: 1rem;
-  overflow: hidden;
 }
 
 #services h2 {
@@ -252,12 +244,13 @@ section {
   font-size: 2rem;
   line-height: 1.1;
 }
-/* Each service card = image + title + text + button */
-#services img {
-  width: 100%;
-  display: block;
-  margin: 0;
+
+.service-card {
+  background: var(--light-gold);
+  margin-bottom: 1rem;
+  overflow: hidden;
 }
+
 #services h3,
 #services p {
   background: var(--light-gold);
@@ -265,50 +258,17 @@ section {
   padding-left: 0.6rem;
   padding-right: 0.6rem;
 }
-/* title block */
+
 #services h3 {
   padding-top: 0.9rem;
-  font-size: 2rem;
+  font-size: 1.6rem;
   line-height: 1.1;
 }
-/* text block */
+
 #services p {
   padding-top: 0.6rem;
   padding-bottom: 1rem;
   font-size: 0.92rem;
-}
-/* service button style */
-
-.service-btn {
-  display: inline-block;
-  background: var(--dark);
-  color: #fff;
-  padding: 1.1rem 1.8rem;  /* consistent rem units */
-  font-size: 1rem;
-  margin: 0;
-}
-
-.service-btn::after {
-  content: " \25B6"; /* triangle arrow  very important*/
-  margin-left: 0.5rem;
-}
-/* Wrap button area in same beige background */
-.service-btn-wrap {
-  background: var(--light-gold);
-  margin: 0;
-  padding-bottom: 0.6rem;
-}
-
-/*service?*/
-
-#services img { width: 100%; display: block; }
-
-#services h3,
-#services p {
-  background: var(--light-gold);
-  margin: 0;
-  padding-left: 0.6rem;
-  padding-right: 0.6rem;
 }
 
 .service-btn-wrap {
@@ -320,8 +280,8 @@ section {
   display: inline-block;
   background: var(--dark);
   color: #fff;
-  padding: 2rem 2rem;
-  font-size: 1.5rem;
+  padding: 1rem 1.2rem;
+  font-size: 1rem;
 }
 
 .service-btn::after {
@@ -329,9 +289,7 @@ section {
   margin-left: 0.5rem;
 }
 
-/* Section Vision*/
-
-/* ===== VISION ===== */
+/* ---------- VISION ---------- */
 #vision {
   position: relative;
   margin: 0.75rem;
@@ -341,7 +299,6 @@ section {
   width: 100%;
   min-height: 220px;
   object-fit: cover;
-  display: block;
 }
 
 #vision .vision-content {
@@ -380,27 +337,22 @@ section {
   margin-left: 0.5rem;
 }
 
-/* ===== TEAM ===== */
+/* ---------- TEAM ---------- */
 #team {
   background: #f3f3f3;
   padding: 0.75rem;
 }
 
-.team-card{
+#team h2 {
+  margin: 0.5rem auto 0.9rem;
+  font-size: 2rem;
+  line-height: 1.1;
+}
+
+.team-card {
   background: var(--light-gold);
   margin-bottom: 1.5rem;
   overflow: hidden;
-}
-
-#team h2 {
-  margin: 0.5rem 0 0.9rem;
-  font-size: 3rem;
-  line-height: 1.05;
-}
-
-#team img {
-  width: 100%;
-  display: block;
 }
 
 #team h3,
@@ -414,7 +366,7 @@ section {
 
 #team h3 {
   padding-top: 0.6rem;
-  font-size: 2rem;
+  font-size: 1.6rem;
   line-height: 1.1;
 }
 
@@ -431,29 +383,27 @@ section {
   font-size: 0.92rem;
 }
 
-/*last sections*/
-
-/* ===== CONTACT / HOURS / LOCATION (mobile) ===== */
+/* ---------- CONTACT / HOURS / LOCATION ---------- */
 #contact {
   background: #f3f3f3;
   padding: 0.75rem;
 }
 
 #contact h2 {
-  margin: 0.5rem 0 0.8rem;
-  font-size: 3rem;
-  line-height: 1.05;
+  margin: 0.5rem auto 0.8rem;
+  font-size: 2rem;
+  line-height: 1.1;
 }
 
 #contact h3 {
-  margin: 0 0 0.5rem;
-  font-size: 2rem;
+  margin: 0 auto 0.5rem;
+  font-size: 1.5rem;
   line-height: 1.1;
 }
 
 .contact-box label {
   display: block;
-  margin: 0.55rem 0 0.2rem; /* polish */
+  margin: 0.55rem 0 0.2rem;
   font-size: 0.9rem;
   color: #111;
 }
@@ -482,17 +432,16 @@ section {
   background: #222;
   color: var(--gold);
   border: none;
-  padding: 0.5rem 0.5rem; /*meassure of button*/
-  font-size: 1rem;        
+  padding: 0.5rem 0.7rem;
+  font-size: 1rem;
   line-height: 1;
-  font-weight: 10;
   cursor: pointer;
 }
 
-/* Hours table */
 table {
   width: calc(100% - 1.5rem);
-  margin: 0.8rem 1rem;
+  max-width: var(--container);
+  margin: 0.8rem auto;
   border-collapse: collapse;
   background: #f3f3f3;
 }
@@ -510,7 +459,7 @@ td {
   padding: 1.2rem 1rem;
   text-align: left;
   font-size: 1rem;
-  vertical-align: middle; /* polish */
+  vertical-align: middle;
 }
 
 th {
@@ -518,14 +467,13 @@ th {
   text-align: center;
 }
 
-/* Location */
 .location-pin {
   background: #f3f3f3;
   padding: 0 0.75rem 1rem;
 }
 
 .location-pin h2 {
-  margin: 0 0 0.5rem;
+  margin: 0 auto 0.5rem;
   font-size: 2rem;
 }
 
@@ -541,7 +489,7 @@ th {
   display: block;
 }
 
-/* Footer */
+/* ---------- FOOTER ---------- */
 .site-footer {
   background: #222;
   color: var(--gold);
@@ -551,4 +499,163 @@ th {
 
 .site-footer p {
   margin: 0.25rem 0;
+}
+
+/* ---------- Desktop ---------- */
+@media (min-width: 760px) {
+  nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    padding: 0.75rem 1rem;
+  }
+
+  .nav-left {
+    display: flex;
+    align-items: center;
+    flex: 1;
+    background: transparent;
+    gap: 1rem;
+  }
+
+  .nav-left > a {
+    background: var(--gold);
+    padding: 0.75rem 1rem;
+    flex: 0 0 auto;
+  }
+
+  .nav-left ul {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 0.15rem;
+    background: transparent;
+    width: auto;
+  }
+
+  .nav-left li a {
+    padding: 0.8rem 1rem;
+    font-size: 0.9rem;
+  }
+
+  .search-bar {
+    flex: 0 0 280px;
+    margin: 0;
+  }
+
+  #home > img {
+    min-height: 540px;
+  }
+
+  #home .hero-box {
+    top: 8rem;
+    width: min(90%, var(--container));
+    padding: 2rem;
+  }
+
+  #home .hero-box h1 {
+    font-size: 4rem;
+  }
+
+  #home .hero-box p {
+    max-width: 70ch;
+  }
+
+  .connectbtn {
+    font-size: 1.25rem;
+    padding: 1.25rem 1.5rem;
+  }
+
+  .about-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    align-items: stretch;
+  }
+
+  #about img {
+    margin: 0;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  #about .about-box {
+    padding-left: 0.75rem;
+  }
+
+  #services {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 1rem;
+    padding: 1rem;
+  }
+
+  #services > h2 {
+    grid-column: 1 / -1;
+    margin-bottom: 0;
+  }
+
+  #services > .service-card:nth-of-type(1),
+  #services > .service-card:nth-of-type(2) {
+    grid-column: span 3;
+  }
+
+  #services > .service-card:nth-of-type(3),
+  #services > .service-card:nth-of-type(4),
+  #services > .service-card:nth-of-type(5) {
+    grid-column: span 2;
+  }
+
+  .service-card {
+    margin-bottom: 0;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .service-btn-wrap {
+    margin-top: auto;
+  }
+
+  #team .team-card {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: stretch;
+  }
+
+  #team .team-card img {
+    height: 100%;
+    object-fit: cover;
+  }
+
+  #contact {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    align-items: start;
+    max-width: var(--container);
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  #contact > h2,
+  #contact > h3 {
+    grid-column: 1 / -1;
+  }
+
+  #contact > .contact-box {
+    grid-column: 1 / 2;
+    max-width: none;
+    margin: 0;
+  }
+
+  .location-pin {
+    max-width: var(--container);
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .map-box iframe {
+    height: 320px;
+  }
 }
