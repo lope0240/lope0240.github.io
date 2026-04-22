@@ -178,14 +178,16 @@ nav {
   background: var(--light-gold);
   padding: 1.5rem 0.75rem;
 }
+
 .about-container {
   max-width: 1200px;
   margin: 0 auto;
+  padding: 0 0.5rem;
 }
 
 #about h2 {
-  margin: 1.5rem;
   font-size: 5rem;
+  margin: 0 0 1rem;
   margin-bottom: 1rem;
 }
 
@@ -196,6 +198,7 @@ nav {
 
 #about p {
   font-size: 16px;
+  line-height: 1.5;
   margin-bottom: 1rem;
   color: #222;
 }
