@@ -629,6 +629,27 @@ th {
     object-fit: cover;
   }
 
+  #team .team-info {
+  padding: 0.6rem;
+  background: var(--light-gold);
+  }
+#team .team-info h3,
+#team .team-info h4,
+#team .team-info p {
+  margin: 0;
+  background: transparent;
+  padding: 0;
+  }
+
+  /* 2nd card: text left, image right */
+#team .team-card:nth-of-type(even) img {
+  order: 2;
+  }
+#team .team-card:nth-of-type(even) .team-info {
+  order: 1;
+  }
+
+
   #team .team-card:nth-of-type(2) img {
   order: 2;
   }  
